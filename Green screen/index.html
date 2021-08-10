@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script  src="script.js"></script>
+    <h1>Green Screen Editor</h1>
+
+<canvas id = "fgcan">
+</canvas>
+
+<canvas id = "bgcan">
+</canvas>
+
+<p class ="uni">
+  Foreground :
+  <input type = "file"
+         multipe ="false"
+         accept ="image/*"
+         id = "fgfile"
+         onchange ="loadfg()">
+  Background :
+  <input type = "file"
+         multipe ="false"
+         accept ="image/*"
+         id = "bgfile"
+         onchange ="loadbg()">
+</p>
+
+<p class ="uni">
+  <input type = "button"
+         value ="Create Composite"
+         onclick = "dogreen()">
+  <input type ="button"
+         value ="Clear Canvas"
+         onclick = "clrcvs()">
+</p>
+
+</body>
+</html>
